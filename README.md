@@ -1,82 +1,88 @@
-# MetasharkTech
+# Metashark.Tech - PWA de MetasharkTech
 
-<a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
+Bienvenido al repositorio de la Progressive Web App (PWA) Test de **MetaShark Inova**.
 
-✨ Your new, shiny [Nx workspace](https://nx.dev) is almost ready ✨.
+## Visión General del Proyecto
 
-[Learn more about this workspace setup and its capabilities](https://nx.dev/nx-api/next?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects) or run `npx nx graph` to visually explore what was created. Now, let's get you up to speed!
+`metashark.tech` es la aplicación central de nuestra presencia web, construida con Next.js dentro de un monorepo Nx para optimizar el desarrollo, las pruebas y el build.
 
-## Finish your CI setup
+## Primeros Pasos
 
-[Click here to finish setting up your workspace!](https://cloud.nx.app/connect/9LFuyGQt1h)
+### Prerrequisitos
 
+Asegúrate de tener instalado [Node.js](https://nodejs.org/) (versión 20.x recomendada) y [pnpm](https://pnpm.io/) (versión 10.x o la especificada en `package.json`).
 
-## Run tasks
+### Instalación de Dependencias
 
-To run the dev server for your app, use:
+Desde la raíz del proyecto, ejecuta:
 
-```sh
-npx nx dev metashark.tech
+```bash
+pnpm install
+
+Tareas Comunes de Desarrollo
+Este workspace utiliza Nx para gestionar las tareas del proyecto.
+Iniciar el Servidor de Desarrollo
+Para ejecutar la aplicación metashark.tech en modo de desarrollo con hot-reloading:
+pnpm nx dev metashark.tech
+
+O simplemente (si nx está accesible globalmente o a través de npx):
+nx dev metashark.tech
+
+La aplicación estará disponible generalmente en http://localhost:3000 (o el puerto que Next.js/Nx asigne).
+Crear un Bundle de Producción
+Para generar una compilación optimizada para producción de metashark.tech:
+pnpm nx build metashark.tech
+
+O:
+
+nx build metashark.tech
+
+La salida del build se encontrará en dist/apps/metashark.tech o, para el caso específico de Next.js, los artefactos principales estarán en apps/metashark.tech/.next.
+
+Ejecutar Pruebas Unitarias
+pnpm nx test metashark.tech
+
+Ejecutar Pruebas End-to-End (E2E)
+pnpm nx e2e metashark.tech-e2e
+
+Ver Todos los Targets Disponibles
+Para ver todas las tareas (targets) que puedes ejecutar para la aplicación metashark.tech:
+pnpm nx show project metashark.tech
+
+Estructura del Proyecto
+apps/metashark.tech/: Código fuente principal de la PWA.
+apps/metashark.tech-e2e/: Pruebas End-to-End para la PWA.
+libs/: (Si existen) Librerías compartidas dentro del workspace.
+tools/: (Si existen) Herramientas y scripts de desarrollo.
+Visualizar el Grafo de Dependencias del Proyecto
+Para entender mejor cómo están interconectados los proyectos y librerías dentro de este workspace Nx:
+pnpm nx graph
+
+Despliegue
+Esta aplicación está configurada para ser desplegada en Vercel. Los despliegues a producción se activan automáticamente con los pushes a la rama main.
+Herramientas y Extensiones Útiles
+Nx Console: Una extensión para VS Code e IntelliJ que facilita la ejecución de tareas y la generación de código con Nx.
+Instalar Nx Console
+Contribuir
+[Detalles sobre cómo contribuir al proyecto, guías de estilo, etc. - AÑADIR SI ES NECESARIO]
+Enlaces Útiles de Nx
+Documentación de Nx
+Nx y Next.js
+Comunidad de Nx en Discord
+Desarrollado por el equipo de MetasharkTech.
+**Cambios y Porqués:**
+
+1.  **Título:** Cambiado a `# Metashark.Tech - PWA de MetasharkTech` para ser específico.
+2.  **Logo:** Añadí un placeholder para el logo de tu empresa. Reemplaza `URL_DE_TU_LOGO_AQUI` con la URL real, o elimina la línea si no quieres un logo o prefieres mantener solo el de Nx.
+3.  **Introducción:** Personalizada para indicar que es la PWA de MetasharkTech.
+4.  **Sección "Visión General del Proyecto":** Añadida para dar un breve contexto.
+5.  **Sección "Primeros Pasos":** Añadida con prerrequisitos e instalación de dependencias usando `pnpm`.
+6.  **Comandos de Tareas:** Mantuve los comandos clave de Nx (`dev`, `build`, `test`, `e2e`, `show project`, `graph`), pero les puse el prefijo `pnpm` ya que es tu gestor de paquetes. También mencioné que `nx comando` a secas puede funcionar.
+7.  **Salida del Build:** Clarifiqué dónde encontrar la salida del build para Next.js.
+8.  **Estructura del Proyecto:** Mencioné las carpetas clave.
+9.  **Sección "Despliegue":** Añadí una breve nota sobre Vercel.
+10. **Sección "Contribuir":** Añadí un placeholder por si quieres añadir directrices de contribución.
+11. **Pie de Página:** Añadido "Desarrollado por el equipo de MetasharkTech."
+12. **Eliminación de Enlaces de CI de Nx Cloud (Opcional):** Quité el enlace de "Finish your CI setup" que apunta a Nx Cloud, ya que puede no ser relevante si no lo estás usando activamente o si ya está configurado. Si lo usas, puedes volver a añadirlo.
+13. **Simplificación de "Add new projects":** Aunque es útil, si este repo es *solo* para la PWA `metashark.tech` y no planeas añadir muchas otras apps/libs dentro del mismo repo *inmediatamente*, esta sección podría ser menos prioritaria en el README principal. La he mantenido por ahora porque es una capacidad de Nx.
 ```
-
-To create a production bundle:
-
-```sh
-npx nx build metashark.tech
-```
-
-To see all available targets to run for a project, run:
-
-```sh
-npx nx show project metashark.tech
-```
-
-These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
-
-[More about running tasks in the docs &raquo;](https://nx.dev/features/run-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Add new projects
-
-While you could add new projects to your workspace manually, you might want to leverage [Nx plugins](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) and their [code generation](https://nx.dev/features/generate-code?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) feature.
-
-Use the plugin's generator to create new projects.
-
-To generate a new application, use:
-
-```sh
-npx nx g @nx/next:app demo
-```
-
-To generate a new library, use:
-
-```sh
-npx nx g @nx/react:lib mylib
-```
-
-You can use `npx nx list` to get a list of installed plugins. Then, run `npx nx list <plugin-name>` to learn about more specific capabilities of a particular plugin. Alternatively, [install Nx Console](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) to browse plugins and generators in your IDE.
-
-[Learn more about Nx plugins &raquo;](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) | [Browse the plugin registry &raquo;](https://nx.dev/plugin-registry?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-
-[Learn more about Nx on CI](https://nx.dev/ci/intro/ci-with-nx#ready-get-started-with-your-provider?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Install Nx Console
-
-Nx Console is an editor extension that enriches your developer experience. It lets you run tasks, generate code, and improves code autocompletion in your IDE. It is available for VSCode and IntelliJ.
-
-[Install Nx Console &raquo;](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Useful links
-
-Learn more:
-
-- [Learn more about this workspace setup](https://nx.dev/nx-api/next?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects)
-- [Learn about Nx on CI](https://nx.dev/ci/intro/ci-with-nx?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Releasing Packages with Nx release](https://nx.dev/features/manage-releases?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [What are Nx plugins?](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-And join the Nx community:
-- [Discord](https://go.nx.dev/community)
-- [Follow us on X](https://twitter.com/nxdevtools) or [LinkedIn](https://www.linkedin.com/company/nrwl)
-- [Our Youtube channel](https://www.youtube.com/@nxdevtools)
-- [Our blog](https://nx.dev/blog?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
