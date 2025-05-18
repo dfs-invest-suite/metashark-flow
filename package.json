@@ -1,9 +1,41 @@
 {
   "name": "@metashark.tech/source",
-  "version": "0.0.0",
-  "license": "MIT",
+  "version": "1.1.0",
+  "description": "WPA MetaShark",
+  "license": "UNLICENSED",
+  "author": {
+    "name": "Raz Podesta",
+    "email": "raz.podesta@metashark.tech",
+    "url": "https://github.com/dfs-invest-suite"
+  },
+  "contributors": [
+    {
+      "name": "L.I.A Legacy",
+      "email": "lia.legacy@metashark.tech"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dfs-invest-suite/metashark-flow.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dfs-invest-suite/metashark-flow/issues"
+  },
+  "homepage": "https://www.metashark.tech",
   "scripts": {
-    "build:vercel": "nx build metashark.tech"
+    "build:vercel": "pnpm nx build metashark.tech",
+    "graph": "pnpm nx graph",
+    "reset": "pnpm nx reset",
+    "format:check": "pnpm prettier --check .",
+    "format:write": "pnpm prettier --write .",
+    "lint:all": "pnpm nx run-many --target=lint --all",
+    "lint:all:fix": "pnpm nx run-many --target=lint --all --fix",
+    "test:all": "pnpm nx run-many --target=test --all",
+    "test:all:coverage": "pnpm nx run-many --target=test --all --coverage",
+    "build:all:prod": "pnpm nx run-many --target=build --all --configuration=production --skip-nx-cache",
+    "affected:lint": "pnpm nx affected --target=lint",
+    "affected:test": "pnpm nx affected --target=test",
+    "affected:build:prod": "pnpm nx affected --target=build --configuration=production --skip-nx-cache"
   },
   "private": true,
   "dependencies": {
@@ -59,5 +91,6 @@
   },
   "workspaces": [
     "apps/*"
-  ]
+  ],
+  "packageManager": "pnpm@10.10.0+sha512.d615db246fe70f25dcfea6d8d73dee782ce23e2245e3c4f6f888249fb568149318637dca73c2c5c8ef2a4ca0d5657fb9567188bfab47f566d1ee6ce987815c39"
 }
