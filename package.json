@@ -3,7 +3,6 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-
     "build:vercel": "nx build metashark.tech"
   },
   "private": true,
