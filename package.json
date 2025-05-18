@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
 
-    "build:vercel": "nx build metashark.tech",
+    "build:vercel": "nx build metashark.tech"
   },
   "private": true,
   "dependencies": {
