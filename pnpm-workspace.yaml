@@ -1,0 +1,13 @@
+packages:
+  - 'apps/*'
+  - 'libs/*' # Si tienes o planeas tener librerías compartidas
+
+onlyBuiltDependencies: # Puedes mantener esta sección si la necesitas
+  - '@nestjs/core'
+  - '@parcel/watcher'
+  - '@swc/core'
+  - '@tailwindcss/oxide'
+  - esbuild
+  - nx
+  - sharp
+  - unrs-resolver

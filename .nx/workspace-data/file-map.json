@@ -48,68 +48,6 @@
     }
   ],
   "fileMap": {
-    "nonProjectFiles": [
-      {
-        "file": "package-lock.json",
-        "hash": "931055132099986337"
-      },
-      {
-        "file": "nx.json",
-        "hash": "14788320461262710520"
-      },
-      {
-        "file": ".github/workflows/ci.yml",
-        "hash": "13616292957033997199"
-      },
-      {
-        "file": "package.json",
-        "hash": "2178000383238012378"
-      },
-      {
-        "file": ".vscode/extensions.json",
-        "hash": "11309362834336059819"
-      },
-      {
-        "file": "eslint.config.mjs",
-        "hash": "3462096019013144053"
-      },
-      {
-        "file": ".prettierrc",
-        "hash": "16267754514737964994"
-      },
-      {
-        "file": ".editorconfig",
-        "hash": "5443105041930014821"
-      },
-      {
-        "file": ".prettierignore",
-        "hash": "14688272390704683536"
-      },
-      {
-        "file": "tsconfig.json",
-        "hash": "11624745643722963748"
-      },
-      {
-        "file": "tsconfig.base.json",
-        "hash": "18132073024976155609"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "11781386581622614206"
-      },
-      {
-        "file": "jest.config.ts",
-        "hash": "6870352021923392442"
-      },
-      {
-        "file": "README.md",
-        "hash": "6977766036637280680"
-      },
-      {
-        "file": "jest.preset.js",
-        "hash": "9430166341120122740"
-      }
-    ],
     "projectFileMap": {
       "metashark.tech-e2e": [
         {
@@ -233,9 +171,75 @@
         },
         {
           "file": "apps/metashark.tech/tsconfig.spec.json",
-          "hash": "5667077840779508676"
+          "hash": "6572386327322198540"
         }
       ]
-    }
+    },
+    "nonProjectFiles": [
+      {
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "14424896806288958356"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "14688272390704683536"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "11309362834336059819"
+      },
+      {
+        "file": "README.md",
+        "hash": "6977766036637280680"
+      },
+      {
+        "file": "eslint.config.mjs",
+        "hash": "3462096019013144053"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "6870352021923392442"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "9430166341120122740"
+      },
+      {
+        "file": "nx.json",
+        "hash": "3681186276601877017"
+      },
+      {
+        "file": "package.json",
+        "hash": "2557236293472021865"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "14696678554943872757"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "16554111604218406230"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "18132073024976155609"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "11624745643722963748"
+      },
+      {
+        "file": "workflows/ci.yml",
+        "hash": "15282501835813065853"
+      }
+    ]
   }
 }
